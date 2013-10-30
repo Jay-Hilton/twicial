@@ -1,0 +1,18 @@
+jacob:
+  first_name: "Jacob"
+  last_name: "Hilton"
+  email: "jacobmonkeyface@gmail.com"
+  profile_name: "Jay_Hilton"
+  encrypted_password: $2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq
+
+robert:
+  first_name: "Robert"
+  last_name: "Hilton"
+  email: "robertbille@gmail.com"
+  profile_name: "ROBERTOhilton"
+
+mike:
+  first_name: "Mike"
+  last_name: "The Frog"
+  email: "mike@teamtreehouse.com"
+  profile_name: "mikethefrog"

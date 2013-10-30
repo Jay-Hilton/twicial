@@ -1,0 +1,136 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+#navbar {
+  background: black;
+  padding: 15px 0;
+}
+
+#brand {
+  font-family: 'Syncopate', sans-serif;
+  color: white;
+  padding: 18px;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+#brand:hover {
+  background: #8F00A6;
+}
+
+.navlink {
+  color: white;
+  -webkit-transition: all 0.1s ease-in-out;
+  padding: 16px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.navlink:hover {
+  color: white;
+  background: #696969;
+}
+
+.alert {
+  margin-top: 10px;
+}
+
+a .active {
+  background-color: #8F00A6;
+}
+
+a.active:hover {
+  background-color: green;
+}
+
+.navlinkuser {
+  color: white;
+  background-color: #696969;
+  -webkit-transition: all 0.1s ease-in-out;
+  padding: 10px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.navlinkuser:hover {
+  color: white;
+  background: #8F00A6;
+}
+
+.navlinkicon {
+  color: white;
+  -webkit-transition: all 0.1s ease-in-out;
+  padding: 19px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.navlinkicon:hover {
+  color: white;
+  background: #696969;
+}
+
+#dropdown .dropdown2 ul {
+  display: none;
+}
+
+#dropdown .dropdown2 li:hover > ul {
+  display: block;
+}
+
+#dropdown .dropdown2 {
+  list-style: none;
+  position: relative;
+  display: inline-table;
+}
+
+#dropdown .dropdown2:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+  
+#dropdown .dropdown2 li a {
+  display: block;
+  padding: 10px;
+}
+
+#dropdown .dropdown2 li {
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+
+#dropdown .dropdown2 ul {
+  background: #696969;
+  position: absolute;
+  top: 100%;
+}
+
+#dropdown .dropdown2 ul li {
+  float: none;
+  position: relative;
+}
+
+#dropdown .dropdown2 ul li a {
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+#dropdown .dropdown2 ul li a:hover {
+  background: #8F00A6;
+}
+
+#dropdown .dropdown2 ul ul {
+  position: absolute;
+  left: 100%;
+  top:0;
+}

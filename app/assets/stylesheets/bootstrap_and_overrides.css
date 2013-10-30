@@ -1,0 +1,55 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+
+  Default colors Purple: #8F00A6; Gray: #696969;
+  */
+
+body {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 400;
+  /* background: linear-gradient(45deg, #020031 0%,#27A03B 100%); */
+}
+
+h1 {
+  color: #8F00A6;
+  font-size: 2.800em;
+}
+
+h2 {
+  color: #FF8820;
+  font-size: 2.400em;
+}
+
+h3 {
+  color: #FF0000;
+  font-size: 2.000em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #25B0E6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #888888;
+  font-size: 15px;
+}
+
+i {
+  font-style: normal;
+}

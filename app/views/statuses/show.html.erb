@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <h1>Show the Status</h1>
+</div>
+
+<%= link_to image_tag(@status.user.gravatar_url), profile_path(@status.user), class: "pull-right" %>
+
+<p>
+  <b>Name:</b>
+  <%= @status.user.full_name %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @status.content %>
+</p>
+<div style="padding-top: 20px;">
+  <%= link_to 'Edit', edit_status_path(@status), class: "btn-submit" %>
+  <%= link_to 'Back', statuses_path, class: "btn-cancel" %>
+</div>
