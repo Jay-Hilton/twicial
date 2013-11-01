@@ -7,7 +7,7 @@
     </div>
     <%= f.input :first_name, :required => true, :autofocus => true, placeholder: "First Name" %>
     <%= f.input :last_name, :required => true, placeholder: "Last Name" %>
-    <%= f.input :profile_name, :required => true, placeholder: "Profile Name" %>
+    <%= f.input :profile_name, :required => true, placeholder: "Profile Name", :hint => "You can not change it" %>
     <%= f.input :email, :required => true, placeholder: "myname@example.com" %>
     <%= f.input :password, :required => true, placeholder: "Password" %>
     <%= f.input :password_confirmation, :required => true, placeholder: "Password Confirmation" %>

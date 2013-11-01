@@ -39,38 +39,33 @@
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
   </head>
   <body>
-
-    <div id="navbar">
       <div class="container">
-        <a href="/welcome" id="brand" class="<%= "active" if @home_active %>">Twicial</a>
-        <%= link_to "Statuses", feed_path, class: "navlink" %>
-        <i class="pull-right">
-          <% if user_signed_in? %>
-          <i id="dropdown">
-            <i class="dropdown2">
-              <li><a href="#" class="navlinkuser"><%= current_user.full_name %></a>
-                <ul>
-                  <li><%= link_to edit_user_registration_path do %>
-                    <i class="icon-pencil"></i>
-                  <% end %></li>
-                  <li><%= link_to profile_path(current_user) do %>
-                    <i class="icon-user"></i>
-                  <% end %></li>
-                  <li><%= link_to user_friendships_path do %>
-                    <i class="icon-group"></i>
-                  <% end %></li>
-                  </ul>
-                </li>
-              </i>
-            </i>
-          <%= link_to "Log Out", logout_path, class: "navlinkuser" %>
-          <% else %>
-          <%= link_to "Register", register_path, class: "navlinkuser" %>
-          <%= link_to "Log In", login_path, class: "navlinkuser" %>
-          <% end %>
-        </i>
+        <div id='cssmenu' class="navbar-static-top">
+            <ul>
+              <li><a href="/welcome" id="brand" class="<%= "active" if @index_active %>">Twicial</a></li>
+               <li><%= link_to "Statuses", feed_path, class: "navlink" %></li>
+                 <% if user_signed_in? %>
+                   <li><a href='#'><span><%= current_user.full_name %></span></a>
+                      <ul>
+                        <li><%= link_to edit_user_registration_path do %>
+                            <i class="icon-pencil"> Edit</i>
+                          <% end %></li>
+                          <li><%= link_to profile_path(current_user) do %>
+                            <i class="icon-user"> User</i>
+                          <% end %></li>
+                         <li><%= link_to user_friendships_path do %>
+                            <i class="icon-group"> Friends</i>
+                          <% end %></a></li>
+                      </ul>
+                   </li>
+                 <li><%= link_to "Log Out", logout_path %></li>
+                <% else %>
+                <li><%= link_to "Register", register_path %></li>
+                <li><%= link_to "Log In", login_path %></li>
+                <% end %>
+            </ul>
+        </div>
       </div>
-    </div>
 
     <div class="container">
       <% flash.each do |type, message| %>
